@@ -1,0 +1,14 @@
+{
+  "name": "shape-up-skills",
+  "description": "Shape Up shaping skills: a grill-style interview that turns a raw idea into a pitch, with Excalidraw breadboards and fat marker sketches.",
+  "owner": {
+    "name": "Jota Farias"
+  },
+  "plugins": [
+    {
+      "name": "shape-up",
+      "source": "./",
+      "description": "Grill-style Shape Up shaping with Excalidraw breadboards and fat marker sketches."
+    }
+  ]
+}

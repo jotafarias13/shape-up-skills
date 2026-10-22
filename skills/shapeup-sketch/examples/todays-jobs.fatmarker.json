@@ -1,0 +1,13 @@
+{
+  "title": "TODAY — layout",
+  "frame": "phone",
+  "regions": [
+    { "id": "header", "at": [0, 0, 6, 1], "kind": "block", "label": "3 of 7" },
+    { "id": "rows", "at": [0, 1, 6, 6], "kind": "list", "count": 3, "label": "9:00" }
+  ],
+  "notes": [
+    { "to": "header", "text": "date + counter, small" },
+    { "to": "rows", "text": "big tappable rows, thumb-sized" },
+    { "to": "rows", "text": "time on the right, nothing else", "side": "left" }
+  ]
+}

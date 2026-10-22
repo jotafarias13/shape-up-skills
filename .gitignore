@@ -1,0 +1,6 @@
+# shaping output from test runs inside this repo
+/shaping/
+# scratch renders
+*.tmp.png
+.DS_Store
+node_modules/

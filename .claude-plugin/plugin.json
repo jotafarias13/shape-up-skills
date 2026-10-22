@@ -1,0 +1,22 @@
+{
+  "name": "shape-up",
+  "displayName": "Shape Up Shaping",
+  "version": "1.0.0",
+  "description": "Grill-style Shape Up shaping: interviews you through the shaping stages one question at a time, plays back what it understood, then writes a paste-ready pitch with Excalidraw breadboards and fat marker sketches.",
+  "author": {
+    "name": "Jota Farias"
+  },
+  "homepage": "https://github.com/jotafarias13/shape-up-skills",
+  "repository": "https://github.com/jotafarias13/shape-up-skills",
+  "license": "MIT",
+  "icon": "./assets/icon.png",
+  "keywords": [
+    "shape-up",
+    "shaping",
+    "pitch",
+    "breadboard",
+    "fat-marker",
+    "excalidraw",
+    "product-management"
+  ]
+}

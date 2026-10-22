@@ -1,0 +1,16 @@
+{
+  "title": "CONTRATO — layout (teste de tipos)",
+  "frame": "desktop",
+  "regions": [
+    { "id": "head", "at": [0, 0, 16, 1], "kind": "text", "label": "Contrato #123" },
+    { "id": "div", "at": [0, 1, 16, 1], "kind": "line" },
+    { "id": "doc", "at": [0, 2, 10, 7], "kind": "image" },
+    { "id": "side", "at": [10, 2, 6, 5], "kind": "box", "label": "Signatários" },
+    { "id": "cta", "at": [11, 8, 4, 1], "kind": "button", "label": "Enviar" }
+  ],
+  "notes": [
+    { "to": "doc", "text": "prévia do PDF, só leitura", "side": "left" },
+    { "to": "side", "text": "status de cada signatário" },
+    { "to": "cta", "text": "ação única da tela" }
+  ]
+}

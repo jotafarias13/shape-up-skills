@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main, next]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Repo checks (manifests, frontmatter, versions, changelog, sketch smoke test)
+        run: node tools/check.mjs
+
+      - name: Official Claude Code plugin validation
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude plugin validate --strict .
+          claude plugin validate --profile directory .
+
+      - name: Render check with the real Excalidraw CLI
+        run: |
+          npm install -g @excalidraw/cli
+          node skills/shapeup-sketch/scripts/sketch.mjs doctor | tee doctor.json
+          node -e "const r=JSON.parse(require('fs').readFileSync('doctor.json','utf8')); if(!r.ok){console.error(r); process.exit(1)}"

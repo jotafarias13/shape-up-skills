@@ -1,0 +1,23 @@
+{
+  "title": "Today's Jobs — main flow",
+  "places": [
+    { "id": "today", "name": "TODAY", "affordances": [
+      { "label": "date + \"3 of 7 done\"" },
+      { "label": "job row", "to": "job" },
+      { "label": "job row" },
+      { "label": "job row" }
+    ]},
+    { "id": "job", "name": "JOB", "affordances": [
+      { "label": "customer + address" },
+      { "label": "address → phone's map app" },
+      { "label": "phone → dialer" },
+      { "label": "notes from dispatch" },
+      { "label": "[ Mark done ]", "to": "returned" }
+    ]},
+    { "id": "returned", "name": "TODAY (returned)", "affordances": [
+      { "label": "job shows as done" },
+      { "label": "next job at top" },
+      { "label": "\"job closed\" flash" }
+    ]}
+  ]
+}
